@@ -1,6 +1,6 @@
 class Candy
   attr_reader :name, :price, :color
-  attr_writer :active
+  attr_writer :color
 end
   
   def initialize (input_name, input_price,input_color)
