@@ -1,18 +1,10 @@
-
 class Candy
-  def initialize (input_name, price, color)
+  attr_reader :name, :price, :color
+  
+  def initialize (input_name, input_price,input_color)
     @name = input_name
     @price = input_price
     @color = input_color
-  end
-  def  name
-    @name
-  end
-  def color
-    @color
-  end
-  def price
-    @price
   end
   def color = (input_color)
     @color = input_color
