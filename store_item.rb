@@ -1,5 +1,7 @@
 class Candy
   attr_reader :name, :price, :color
+  attr_writer :active
+end
   
   def initialize (input_name, input_price,input_color)
     @name = input_name
@@ -12,6 +14,7 @@ class Candy
 
   def print_info
     puts "The #{name} is #{color} that costs $#{price}."
+  end
 end
 
 candy1 = Candy.new("Starburst", 0.99, "yellow")
