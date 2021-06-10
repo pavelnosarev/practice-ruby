@@ -7,3 +7,10 @@ employee1 = { :first_name => "Majora", :last_name  => "Carter", :salary" => 8000
 employee2 = {first_name: Danillo", "last_name " => "Campos", "salary" => 70000, "active" => true }
 
 puts "#{employee1["first_name"]} makes #{employee1["salary"]} a year."
+
+class Employee
+  attr_reader :first_name, :last_name, :active
+  attr_writer :active
+
+  def initialize
+    

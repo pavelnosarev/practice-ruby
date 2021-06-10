@@ -3,10 +3,10 @@ class Candy
   attr_writer :color
 end
   
-  def initialize (input_name, input_price,input_color)
-    @name = input_name
-    @price = input_price
-    @color = input_color
+  def initialize (input_options)
+    @name = input_options[:name]
+    @price = input_options[:price]
+    @color = input_options[:color]
   end
   def color = (input_color)
     @color = input_color
@@ -17,9 +17,9 @@ end
   end
 end
 
-candy1 = Candy.new("Starburst", 0.99, "yellow")
-candy2 = Candy.new("Twix", 1.25, "bronze")
-candy3 = Candy.new("Snickers",1.49, "brown")
+candy1 = Candy.new(name:"Starburst", price: 0.99, color : "yellow")
+candy2 = Candy.new(name: "Twix", price: 1.25, color: "bronze")
+candy3 = Candy.new(name: "Snickers",price: 1.49, color: "brown")
 
 candy1.print_info
 p candy1.price
