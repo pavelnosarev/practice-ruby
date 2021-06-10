@@ -36,7 +36,8 @@ class Bike < Vehicle
     puts "Ring ring!"
   end
 end
-car = Car.new(fuel: "gasoline")
+car1 = Car.new(fuel: "gasoline", make: "Volkswagen", model: "Jetta")
+bike1 = Bike.new
 p car.accelerate
 p bike.accelerate
 
