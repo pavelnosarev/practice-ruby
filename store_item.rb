@@ -23,4 +23,4 @@ candy3 = Candy.new(name: "Snickers",price: 1.49, color: "brown")
 
 candy1.print_info
 p candy1.price
-p candy3.color
+p candy3.colorZX
